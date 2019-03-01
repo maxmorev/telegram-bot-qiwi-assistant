@@ -18,18 +18,11 @@ public class BotApp {
 
 
         try {
-
             ApiContextInitializer.init();
-
             TelegramBotsApi telegramBotsApi = createTelegramBotsApi();
-
-
+            // Set up SOCKS5 proxy for bot
             String proxyServer = "127.0.0.1";
             Integer proxyPort = 9050;
-
-            //RequestConfig requestConfig = RequestConfig.custom().setProxy(httpHost).setAuthenticationEnabled(false).build();
-            //botOptions.setRequestConfig(requestConfig);
-            // Set up Http proxy
             DefaultBotOptions botOptions = ApiContext.getInstance(DefaultBotOptions.class);
             botOptions.setProxyHost(proxyServer);
             botOptions.setProxyPort(proxyPort);
