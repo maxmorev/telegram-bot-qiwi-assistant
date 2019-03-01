@@ -46,7 +46,7 @@ public class BotApp {
                 return;
             }
         } catch (Exception e) {
-            //BotLogger.error(LOGTAG, e);
+            e.printStackTrace();
         }
     }
 
