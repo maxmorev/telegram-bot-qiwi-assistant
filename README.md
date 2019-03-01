@@ -5,8 +5,11 @@ Qiwi wallet little helper.
 Allows:
 --------
 ● Check balance
+
 ● Check history of payments
+
 ● Transfer from wallet to wallet
+
 
 Dependencies on my project [JAVA Qiwi Api](https://github.com/maxmorev/qiwi-client)
 --------
